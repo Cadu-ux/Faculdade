@@ -14,7 +14,7 @@ body {
     padding: 10px;
     margin: 15px;
 }
-#botaoIniciar, #botaoListar, #botaoAdd, #botaoUpd, #botaoRemove, #botaoListaPorEditora {
+#botaoIniciar, #botaoListar, #botaoAdd, #botaoUpd, #botaoRemove, #botaoListaPorEditora, #botaoListaPorCategoria {
 padding: 5px;
 margin: 5px;
 background-color: #18242d;
@@ -23,7 +23,7 @@ font-family: 'Courier New', Courier, monospace;
 text-shadow: 1px 1px 1px #000000;
 font-size: 15px;
 }
-#botaoIniciar:hover, #botaoListar:hover, #botaoAdd:hover, #botaoUpd:hover, #botaoRemove:hover, #botaoListaPorEditora:hover {
+#botaoIniciar:hover, #botaoListar:hover, #botaoAdd:hover, #botaoUpd:hover, #botaoRemove:hover, #botaoListaPorEditora:hover,#botaoListaPorCategoria:hover {
     background-color: #3e5362;
 }
 span#burger {
