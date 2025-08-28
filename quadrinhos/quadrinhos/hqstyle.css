@@ -28,17 +28,18 @@ font-size: 15px;
 }
 span#burger {
     background-color: rgb(42, 42, 42);
+    cursor: pointer;
     display: block;
     color: white;
     text-align: center;
     padding: 10px;
 }
+#itens {
+    display: none;
+}
+
 span#burger:hover {
     color: rgb(255, 255, 255);
     background-color: rgb(61, 61, 61);
     cursor: pointer;
-}
-
-#itens {
-    display: none;
 }
