@@ -61,4 +61,28 @@ span#burger:hover {
     margin: 0;
     font-size: 0.9em;
     color: #b3b3b3;
+    flex-grow: 1;  
+}
+.hq-titulo, .hq-id {
+    margin: 0;
+    font-size: 1.2em;
+    color: #b3b3b3;
+    flex-grow: 1;  
+}
+.form-container {
+    color: #b3b3b3;
+}
+.form-container h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #b3b3b3;
     flex-grow: 1;
+}
+.aviso-sucesso {
+    color: #b3b3b3;
+    font-size: 1.2em;
+}
+.aviso-erro {
+    color: #b3b3b3;
+    font-size: 1.2em;
+}
