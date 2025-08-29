@@ -55,7 +55,25 @@ const remove = (l) => {
   return 'limpo!'
 }
 
-const printar = (l) => l.map(x => `ID: ${x.id} - Título: "${x.titulo}" - Editora: ${x.editora} - Ano: ${x.ano} - Categoria: ${x.categoria}`).join('<br>')
+const printar = (l) => {
+    if (l.length === 0) {
+        return `<p class="aviso-lista-vazia">Nenhuma HQ encontrada.</p>`;
+    }
+
+    const cardsHTML = l.map(hq => `
+        <div class="hq-card">
+            <h3 class="hq-titulo">${hq.titulo}</h3>
+            <p class="hq-info">
+                <span class="hq-editora">Editora: ${hq.editora}</span>
+                <span class="hq-ano">Ano: ${hq.ano}</span>
+                <span class="hq-categoria">Categoria: ${hq.categoria}</span>
+            </p>
+            <div class="hq-id">ID: ${hq.id}</div>
+        </div>
+    `).join('');
+
+    return `<div class="lista-hqs">${cardsHTML}</div>`;
+}
 
 const update = (l,id,l2) => l.map(x => x.id == id ? {...x,...l2} : x )
 
