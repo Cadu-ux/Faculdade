@@ -1,24 +1,24 @@
 @charset "UTF-8";
-/* Estilos para telas de tablet e desktop */
+
 @media screen and (min-width: 768px) {
 
-  /* 1. Esconde o ícone de hambúrguer */
+  
   span#burger {
     display: none;
   }
 
-  /* 2. Mostra a lista de itens do menu */
+ 
   #itens {
     display: block;
   }
   
-  /* 3. (Opcional, mas recomendado) Melhora o layout do menu no PC */
+
   #itens ul {
-    display: flex;          /* Coloca os botões lado a lado */
-    justify-content: center; /* Centraliza os botões */
-    list-style: none;       /* Remove o marcador da lista */
+    display: flex;          
+    justify-content: center; 
+    list-style: none;       
     padding: 0;
-    gap: 15px;              /* Adiciona um espaço entre os botões */
+    gap: 15px;            
   }
 
 }
