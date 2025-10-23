@@ -1,0 +1,132 @@
+@charset "UTF-8";  
+
+body {
+    background-image: url(imagens/download.jpeg);
+}
+
+#titulo {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: #fffffe;
+    background-color: #363636dd;
+    text-shadow: 1px 1px 1px #000000;
+    padding: 10px;
+    margin: 15px;
+}
+#botoes {
+    border-radius: 10px;
+    background-color: rgba(26, 26, 26, 0.855);
+    max-width: 1300px;
+    margin: 20px auto;
+    flex-direction: column;
+    padding: 18px;
+}
+
+#botaoIniciar, #botaoListar, #botaoAdd, #botaoUpd, #botaoRemove, #botaoListaPorEditora, #botaoListaPorCategoria, #botaoPesquisaHQ {
+padding: 5px;
+margin: 5px;
+background-color:  #2c3136;
+color: #f5f5f5;
+border: 1px solid #000000;
+border-radius: 5px;
+cursor: pointer;
+font-family: 'Courier New', Courier, monospace;
+text-shadow: 1px 1px 1px #000000;
+font-size: 15px;
+transition: all 0.3s ease-in-out;
+}
+
+#botaoIniciar:hover, #botaoListar:hover, #botaoAdd:hover, #botaoUpd:hover, #botaoRemove:hover, #botaoListaPorEditora:hover,#botaoListaPorCategoria:hover, #botaoPesquisaHQ:hover {
+    background-color: #b61d22;
+    color: #ffffff;
+    border-color: #e62429;
+}
+
+/* Menu burguer */
+span#burger {
+    display: none;
+}
+span#burger:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(61, 61, 61);
+    cursor: pointer;
+}
+
+menu#itens {
+    display: block;
+}
+
+/* Caixa de saída */
+#saida {
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.85); /* preto translúcido */
+    color: #fff;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 1.5em;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+    word-wrap: break-word;
+}
+
+/* Inputs e botões */
+#saida input, 
+#saida button,
+#formularios input,
+#formularios button {
+    margin: 5px 0;
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+/* Ativar grid automaticamente quando houver inputs/botões */
+#saida:has(input), 
+#saida:has(button), 
+#formularios:has(input), 
+#formularios:has(button) {
+    display: grid;
+    grid-template-columns: 150px 1fr; /* label + input */
+    gap: 10px;
+    align-items: center;
+}
+
+/* Botões dentro da grid ocupam toda a linha */
+#saida button, #formularios button {
+    grid-column: span 2;
+    background-color: #2c3136   ;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+#saida button:hover, #formularios button:hover {
+    background-color: #b61d22;
+    color: #ffffff;
+    border-color: #e62429;
+}
+
+/* Ajustes para textos longos e imagens */
+#saida p,
+#saida img,
+#saida h2 {
+    margin-top: 10px;
+    grid-column: span 2;
+}
+
+#saida img {
+    max-width: 200px;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#saida label {
+    font-size: 20px;
+}
