@@ -1,0 +1,16 @@
+A - sinal (4 - 2 * 3)
+a multiplicacao vem primeiro
+sinal (4 - (2 * 3))
+sinal (4 - 6)
+sinal (-2)
+B - sinal (3^2 - 2*4)
+a potencia e a multiplicacao tem precedencia,depois disso vem a subtracao
+sinal (9 - (2 * 4))
+sinal (9 - 8)
+sinal (1)
+C - sinal (4*4 - 2^4)
+a potencia e a multiplicacao tem precedencia,depois disso vem a subtracao
+sinal (16 - (2^4))
+sinal (16 - 16)
+sinal (0)
+
